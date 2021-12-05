@@ -14,10 +14,36 @@ Um cookie é usado para salvar a escolha do usuário..
 
 ![](github_cover.jpg)
 
-## **Installation**
+## **Instalação**
+>Installation
 
 ### Composer:
 ```sh
 composer require carlosleonam/tdatagrid_dynamic_limit
 ```
+
+### Incluir no __libraries.html__ ou __libraries_user.html__:
+```html
+<!-- js-cookie CDN Files -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+```
+
+## **Uso**
+>Use
+
+Incluir o "use" no cabeçalho da classe
+```php
+<?php
+use CarlosLeonam\TDatagridDynamicLimit\AdditionalFunctions;
+```
+
+No final da **"construct"** da classe, antes da linha **"parent::add($container);"**:
+```php
+$class_counter = __CLASS__ ;
+include('vendor/carlosleonam/tdatagrid_dynamic_limit/src/include_counter.php');
+
+$limit = CarlosLeonam\TDatagridDynamicLimit\AdditionalFunctions::checkCookieForLimit('profile_limit_'. self::$formName .'_per_page');
+$this->limit = $limit;
+```
+
 
