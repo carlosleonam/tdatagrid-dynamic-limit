@@ -33,7 +33,7 @@ TScript::create("
         var value_selected = 20;
         var year_selected = new Date().getFullYear();
 
-        $('<label id=\"select_counter\" style=\"margin-left:10px; padding-left=10px; padding-right:10px; font-size: 12px;\">Qtde por página</label>').appendTo('.panel-footer:first');
+        $('<label id=\"select_counter\" style=\"margin-left:10px; padding-left=10px; padding-right:10px; font-size: 12px;\">Qtde por página</label>').appendTo('$append_selector');
         var sel = $('<select id=\"limit_page\">').appendTo('$append_selector');
         $(arr).each(function() {
             sel.append($(\"<option>\").attr('value',this.val).text(this.text));
