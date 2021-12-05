@@ -1,0 +1,20 @@
+{
+    "name": "carlosleonam/tdatagrid_dynamic_limit",
+    "description": "Dynamic Limit for Adianti TDatagrid Lists",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Leonam, Carlos",
+            "email": "carlosleonam@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "CarlosLeonam\\TDatagridDynamicLimit\\": "src"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.2",
+    }
+}
