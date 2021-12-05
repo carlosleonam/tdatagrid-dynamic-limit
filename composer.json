@@ -3,7 +3,8 @@
     "description": "Dynamic Limit for Adianti TDatagrid Lists",
     "type": "package",
     "require": {
-        "php": ">=7.2"
+        "php": ">=7.2",
+        "adianti-framework": ">=7.3"
     },
     "authors": [
         {
