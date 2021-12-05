@@ -7,11 +7,12 @@
  * @Last Modified time: 2021-11-27 17:03:03
  */
 
- /* 
-  * Add the below line, uncommented of course, before include this file 
+ /*
+  * Add the below line, uncommented of course, before include this file
   * with: include('vendor/carlosleonam/tdatagrid_dynamic_limit/src/include_counter.php');
  */
  // $class_counter = __CLASS__; // Put in onReload of class
+$append_selector = $append_selector ?? '.panel-footer:first';
 
 TScript::create("
 
@@ -33,7 +34,7 @@ TScript::create("
         var year_selected = new Date().getFullYear();
 
         $('<label id=\"select_counter\" style=\"margin-left:10px; padding-left=10px; padding-right:10px; font-size: 12px;\">Qtde por página</label>').appendTo('.panel-footer:first');
-        var sel = $('<select id=\"limit_page\">').appendTo('.panel-footer:first');
+        var sel = $('<select id=\"limit_page\">').appendTo('$append_selector');
         $(arr).each(function() {
             sel.append($(\"<option>\").attr('value',this.val).text(this.text));
         });
