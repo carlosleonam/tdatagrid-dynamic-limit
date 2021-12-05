@@ -51,6 +51,14 @@ $append_selector = '.panel-footer:first';
 $class_counter = __CLASS__ ;
 include('vendor/carlosleonam/tdatagrid_dynamic_limit/src/include_counter.php');
 ```
+Mudando para:
+```php
+$class_counter = __CLASS__ ;
+$append_selector = '.header-actions:first';
+include('vendor/carlosleonam/tdatagrid_dynamic_limit/src/include_counter.php');
+```
+![](github_cover_2.jpg)
+
 
 
 
