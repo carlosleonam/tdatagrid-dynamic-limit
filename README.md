@@ -18,6 +18,6 @@ Um cookie é usado para salvar a escolha do usuário..
 
 ### Composer:
 ```sh
-composer require carlosleonam/
+composer require carlosleonam/tdatagrid_dynamic_limit
 ```
 
