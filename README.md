@@ -45,7 +45,7 @@ $limit = CarlosLeonam\TDatagridDynamicLimit\AdditionalFunctions::checkCookieForL
 $this->limit = $limit;
 ```
 
-Por padrão, o limitador é adicionado a primeira chamada da clasee  ".panel-footer:first". Caso deseje mudar esse comportamento, acrescente a seguinte, antes do __"include()"__ acima, alterando o seletor padrão. Ficando assim:
+Por padrão, o limitador é adicionado a primeira chamada da classe  ".panel-footer:first". Caso deseje mudar esse comportamento, acrescente a seguinte, antes do __"include()"__ acima, alterando o seletor padrão. Ficando assim:
 ```php
 $append_selector = '.panel-footer:first';
 $class_counter = __CLASS__ ;
