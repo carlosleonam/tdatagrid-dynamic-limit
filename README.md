@@ -41,9 +41,16 @@ No final da **"construct"** da classe, antes da linha **"parent::add($container)
 ```php
 $class_counter = __CLASS__ ;
 include('vendor/carlosleonam/tdatagrid_dynamic_limit/src/include_counter.php');
-
 $limit = CarlosLeonam\TDatagridDynamicLimit\AdditionalFunctions::checkCookieForLimit('profile_limit_'. self::$formName .'_per_page');
 $this->limit = $limit;
 ```
+
+Por padrão, o limitador é adicionado a primeira chamada da clasee  ".panel-footer:first". Caso deseje mudar esse comportamento, acrescente a seguinte, antes do __"include()"__ acima, alterando o seletor padrão. Ficando assim:
+```php
+$append_selector = '.panel-footer:first';
+$class_counter = __CLASS__ ;
+include('vendor/carlosleonam/tdatagrid_dynamic_limit/src/include_counter.php');
+```
+
 
 
