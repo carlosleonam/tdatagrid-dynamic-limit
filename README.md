@@ -1,3 +1,4 @@
+
 # **LIMITE dinâmico para TDatagrid no Adianti Framework**
 > Dynamic LIMIT for TDatagrid in the Adianti Framework
 
@@ -12,7 +13,7 @@ O que é isso? Simples! Este é um seletor que permitirá aos usuários finais e
 >What is it? Simple! This is a selector that allows end users to choose the number of lines per page shown in a TDatagrid class.
 
 Um cookie é usado para salvar a escolha do usuário..
->.A cookie is used to save the user's choice.
+>A cookie is used to save the user's choice.
 
 ## **Instalação**
 >Installation
@@ -32,12 +33,14 @@ composer require carlosleonam/tdatagrid_dynamic_limit
 >Use
 
 Incluir o "use" no cabeçalho da classe
+>Include "use" in the class header
 ```php
 <?php
 use CarlosLeonam\TDatagridDynamicLimit\AdditionalFunctions;
 ```
 
-No final da **"construct"** da classe, antes da linha **"parent::add($container);"**:
+No final da **"```__construct```"** da classe, antes da linha **"parent::add($container);"**:
+>Add at the end of the class "```__construct``` ", before the line " parent :: add ($ container); ":
 ```php
 $class_counter = __CLASS__ ;
 include('vendor/carlosleonam/tdatagrid_dynamic_limit/src/include_counter.php');
