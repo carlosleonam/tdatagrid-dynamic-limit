@@ -1,10 +1,10 @@
 # **LIMITE dinâmico para TDatagrid no Adianti Framework**
 > Dynamic LIMIT for TDatagrid in the Adianti Framework
-<!--
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
- -->
+
+![GitHub issues badge](https://img.shields.io/github/issues/carlosleonam/tdatagrid-dynamic-limit)
+![GitHub forks badge](https://img.shields.io/github/forks/carlosleonam/tdatagrid-dynamic-limit)
+![GitHub stars badge](https://img.shields.io/github/stars/carlosleonam/tdatagrid-dynamic-limit)
+![GitHub license badge](https://img.shields.io/github/license/carlosleonam/tdatagrid-dynamic-limit)
 
 ![](github_cover.jpg)
 
